@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "Site3_Counter": {
+      "main": "src/Site3_Counter/increment_counter.mo",
+      "type": "motoko"
+    },
+    "Site3_Counter_assets": {
+      "dependencies": [
+        "Site3_Counter"
+      ],
+      "frontend": {
+        "entrypoint": "src/Site3_Counter_assets/src/index.html"
+      },
+      "source": [
+        "src/Site3_Counter_assets/assets",
+        "dist/Site3_Counter_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
