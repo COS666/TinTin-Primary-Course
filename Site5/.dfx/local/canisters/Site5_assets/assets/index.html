@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Microblog</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
+  <script defer src="index.js"></script></head>
+  <body>
+    <header><h1>Microblog</h1></header>
+    <main>
+      <center><h3>Junweif</h3></center>
+      <label for="message">What do you want to post</label>
+      <textarea id="message"></textarea>
+      <br><label for="opt">OTP</label></br>
+      <input id="otp1"></input>
+      <br><button id="post">Post</button></br>
+      &nbsp;<span id="post_error"></span>
+      <label for="author">Who do you want to follow</label>
+      <textarea id="author"></textarea>
+      <br><label for="opt">OTP</label></br>
+      <input id="otp2"></input>
+      <br><button id="follow">Follow</button></br>
+      &nbsp;<span id="follow_error"></span>
+      <h3>Following</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Canister id</th>
+          </tr>
+        </thead>
+        <tbody id="follows">
+        </tbody>
+      </table>
+      <h4><section id="author_name">Author's posts(click the name) </section></h4>
+      <pre id="get_posts"></pre>
+      <h3>Timeline</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>author</th>
+            <th>time</th>
+            <th>post</th>
+          </tr>
+        </thead>
+        <tbody id="timeline">
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html> 

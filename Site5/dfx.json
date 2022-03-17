@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "Site5": {
+      "main": "src/Site5/main.mo",
+      "type": "motoko"
+    },
+    "Site5_assets": {
+      "dependencies": [
+        "Site5"
+      ],
+      "frontend": {
+        "entrypoint": "src/Site5_assets/src/index.html"
+      },
+      "source": [
+        "src/Site5_assets/assets",
+        "dist/Site5_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
